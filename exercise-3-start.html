@@ -11,38 +11,53 @@
             display: flex;
             flex-direction: column;
         }
+        #header{
+            background-color: #1e90ff;
+            border: 0.25em solid #0077ea;
+        }
+        #footer{
+            background-color: #4169e1;
+            border: 0.25em solid #1d44b8;
+        }
         .smallBox{
-            background-color: blue;
+            border-radius: 0.5rem;
             margin: 1em 1em 1em 1em;
             padding-left: 1em;
             height: 10vh;
-            border-style: double;
         }
         .item{
             display: flex;
-            background-color: violet;
-            padding: 1em;
+            background-color: #2f8d59;
+            border: 0.25em solid #226741;
+            border-radius: 0.5rem;
+            padding: 0.5em;
             margin-left: 1em;
             height: 0.5em;
             align-items: center;
         }
         .bigBox p{
-            margin: 1em 50em 0 1em;
+            margin: 0 50em 0.25em 1em;
             align-items: center;
             font-size: 2em;
         }
         .bigBox{
             box-sizing: border-box;
-            background-color: green;
+            background-color: #3cb371;
+            border: 0.25em solid #2f8d59;
+            border-radius: 0.5rem;
             margin: 1em 1em 1em 1em;
+            padding: 0.25em 0 1em 0;
             height: 80vh;
             width: 80vw;
             display: flex;
             flex-wrap: wrap;
+            overflow: hidden;
         }
         .sidebar{
             box-sizing: border-box;
-            background-color: red;
+            background-color: #ff6347;
+            border: 0.25em solid #e02200;
+            border-radius: 0.5rem;
             margin: 1em;
             padding-left: 1em;
             height: 80vh;
@@ -56,7 +71,7 @@
     </style>
 </head>
 <body>
-    <header><div class="smallBox"><p>header</p></div></header>
+    <header><div class="smallBox" id="header"><p>header</p></div></header>
     <div class="bigContainer">
         <div class="bigBox">
             <p>main</p>
@@ -109,6 +124,6 @@
             <div class="item">item</div>       
         </div>
         <div class="sidebar"><p>sidebar</p></div></div>
-    <footer><div class="smallBox"><p>footer</p></div></footer>
+    <footer><div class="smallBox" id="footer"><p>footer</p></div></footer>
 </body>
 </html>
